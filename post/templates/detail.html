@@ -1,0 +1,13 @@
+
+
+<h1>{{blog_detail.title}}</h1>
+<h3>{{blog_detail.body}}</h3>
+<h4>{{blog_detail.pub_date}}</h4>
+
+<br>
+<a href="{% url 'update' blog_detail.id %}"><span>수정하기</span></a>   
+<!-- detail 페이지에 넣고싶다!  -->
+<a href="{% url 'delete' blog_detail.id %}"><span>삭제</span></a>
+
+
+<a href="{% url 'home' %}">목록</a>
